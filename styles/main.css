@@ -1,0 +1,462 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BASE STYLES --------------------------------------------- */
+/* body, html {
+    max-height: 100%;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 80%;
+	margin: 0 auto;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+    }
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1.8rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* TYPOGRAPHY ------------------------------------------------ */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* section {
+    padding: 100px 0;
+} */
+
+
+h1 {
+    font-size: 4.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60vh;
+    margin: auto;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;   
+}
+
+.intro {
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 4.2rem;
+    color: #000;
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+.secondaryTitle {
+    font-size: 3.2rem;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+input {
+    width: 60%;
+}
+
+
+/* Iconography Styling ---------------------------------------------- */
+
+i {
+    color: #fff;
+}
+
+.socialLinks {
+    float: right;
+    margin-right: 25px;
+    margin-top: 175px;
+}
+
+.socialLinks a i {
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.socialLinks a {
+    text-decoration: none;
+}
+
+.button {
+    background: #e7a8e6;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+
+
+/* HEADER SECTION --------------------------------------------- */
+
+header {
+    background-image: url(../assets/headerBg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav ul li {
+    float: left;
+}
+
+.headerWordMark {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.2rem;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    width: 20%;
+    text-transform: capitalize;
+}
+
+
+a.navLinks {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.welcomeContainer {
+    text-align: center;
+    padding-top: 65vh;
+
+}
+
+.shutterHero {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-size: 12.8rem;
+    line-height: 6.5rem;
+    width: 100%;
+}
+
+.menuIcon {
+    display: none;
+}
+
+
+/* ABOUT SECTION ----------------------------------------------- */
+
+.about {
+    background: #f0f5ff;
+    text-align: center;
+    padding: 80px 250px 100px 250px;
+}
+
+.about p {
+    padding: 30px 30px 60px 60px;
+    line-height: 3rem;
+}
+
+/* IMAGE CAROUSEL SECTION -------------------------------------- */
+
+.imageCarousel {
+    padding: 100px 0;
+    margin: 20px 0;
+}
+
+.imageCarousel img {
+    float: left;
+    width: 30%;
+    margin-right: 30px;
+}
+
+/* HERO NAV SECTION ---------------------------------------------*/
+
+.navBanner {
+    background-image: url(../assets/navBanner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display', serif;
+    padding: 40px 0;
+}
+
+.iconContainer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.icon {
+    float: left;
+    width: 22%;
+    color: #fff;
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+
+.icon span {
+    display: block;
+}
+
+/* BEHIND THE LENSE SECTION ------------------------------------- */
+.behindTheLense {
+    margin-top: 175px;
+}
+
+.behindTheLenseImage {
+    float: left;
+    width: 25%;
+}
+
+.behindTheLenseText {
+    float: left;
+    width: 72%;
+    margin-left: 3%;
+    padding-top: 2%;
+    height: 450px;
+}
+
+.behindTheLenseText h3 {
+    line-height: 0;
+}
+
+.behindTheLenseText p {
+    padding: 5% 0 5% 0;
+}
+
+/* .behindTheLenseImage img {
+    width: 100%;
+    display: block;
+} */
+
+@media(max-width: 1450px) {
+    .behindTheLenseText p {
+        padding: 2% 0 2% 0;
+    }
+}
+
+@media(max-width: 1370px) {
+    .behindTheLenseText p {
+        padding: 2% 0 1% 0;
+    }
+}
+
+@media(max-width: 1338px) {
+    .behindTheLenseText p {
+        padding: 1% 0 1% 0;
+    }
+}
+
+
+
+
+
+/* NATURE-SCENERY / CANDID PHOTOGRAPHY SECTION ------------------- */
+
+.natureGrid,
+.candidGrid {
+    background: #f0f5ff;
+    padding: 0;
+}
+
+.natureImageBox,
+.candid {
+    float: right;
+    width: 50%
+}
+
+.nature,
+.candidImageBox {
+    float: left;
+    width: 50%;  
+}
+
+.natureImageBox img,
+.candidImageBox img {
+    display: block;
+}
+
+
+.natureContentWrapper {
+    text-align: right;
+    width: 50%;
+    padding-top: 15%;
+    margin-left: 35%;
+}
+
+.natureContentWrapper p {
+    padding-bottom: 2%;
+}
+
+.candidContentWrapper {
+    text-align: left;
+    width: 50%;
+    padding-top: 15%;
+    margin-left: 15%;
+
+}
+
+.candidContentWrapper p {
+    padding-bottom: 2%;
+}
+
+
+/* FOOTER SECTION ----------------------------------------------- */
+
+footer {
+    background-color: #232323;
+    color: #fff;
+}
+
+.footerWrapper {
+    padding: 100px 0;
+}
+
+.footerWrapper h4 {
+    margin: 0;
+}
+
+.contactBox,
+.footerNavBox {
+    width: 20%;
+    float: left;
+}
+
+.enewsBox {
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+
+.contactBox {
+    text-align: left;
+}
+
+.contactBox p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.footerNavBox {
+    text-align: right;
+}
+
+.footerNavBox li {
+    padding: 5px 0;
+}
+
+
+
+
+
+.footerNavBox nav {
+    margin: 0;
+}
+
+.footerNav ul li {
+    display: block;
+    float: none;
+    color: #fff;
+}
+
+.footerNav a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+
+
+
+input[type=email] {
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+    color: #454647;
+    border: none;
+}
+
+input[type=submit] {
+	width: 20%;
+	height: 40px;
+    background:#e7a8e6;
+    border: 1px solid #e7a8e6;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contactMobile,
+.footerMobile {
+    display: none;
+}
+
+
+
+.copyright {
+    background: #000;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 10px 0;
+}
