@@ -135,7 +135,7 @@ i {
 .button {
     background: #e7a8e6;
     text-transform: uppercase;
-    padding: 12px 30px;
+    padding: 10px 30px;
     letter-spacing: 1px;
     color: #000;
 }
@@ -172,7 +172,6 @@ nav ul li {
     text-transform: capitalize;
 }
 
-
 a.navLinks {
     text-transform: uppercase;
     color: #fff;
@@ -200,6 +199,36 @@ a.navLinks {
     display: none;
 }
 
+@media(max-width: 780px) {
+    .navBox {
+        display: none;
+    }
+
+    .socialLinks {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+        font-size: 4.8rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 30px;
+    }  
+}
+
+@media(max-width: 500px) {
+    .welcomeContainer {
+        text-align: center;
+        padding-top: 35vh;
+        padding-right: 5%;
+        padding-left: 5%;
+}
+    .shutterHero {
+        font-size: 9.6rem;
+    }
+}
 
 /* ABOUT SECTION ----------------------------------------------- */
 
@@ -214,6 +243,28 @@ a.navLinks {
     line-height: 3rem;
 }
 
+@media(max-width: 1290px) {
+    .about p {
+        padding: 80px 75px 80px 75px;
+    }
+}
+
+@media(max-width: 1030px) {
+    .about p {
+        padding: 40px 30px 40px 30px;
+    }
+}
+
+@media(max-width: 780px) {
+    .about {
+        padding: 20px 0 40px 0;
+    }
+
+    .about p {
+        padding: 20px 30px 20px 30px;
+    }
+}
+
 /* IMAGE CAROUSEL SECTION -------------------------------------- */
 
 .imageCarousel {
@@ -226,6 +277,40 @@ a.navLinks {
     width: 30%;
     margin-right: 30px;
 }
+
+.imageCarousel img:last-child {
+    margin-right: 0;
+}
+
+@media(max-width: 1170px) {
+    .imageCarousel {
+        padding: 50px 0;
+        margin: 10px 0;
+}
+    .imageCarousel img {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 633px) {
+    .imageCarousel {
+        padding: 0;
+        margin: 0;
+    }
+
+.imageCarousel .wrapper {
+        max-width: 100%;
+    }
+
+    .imageCarousel img {
+        width: 50%;
+        margin: 0
+    }
+
+    .imageCarousel img:last-child {
+        display: none;
+    }   
+} 
 
 /* HERO NAV SECTION ---------------------------------------------*/
 
@@ -255,9 +340,39 @@ a.navLinks {
     display: block;
 }
 
+@media(max-width: 780px) {
+    .icon  {
+        margin-right: 15px;
+    }
+
+    .icon span {
+        font-size: 2rem;
+    }    
+}
+
+@media(max-width: 633px) {
+    .navBanner {
+        background: #1f2022;
+    }
+
+    .iconContainer {
+        margin: 0;
+    }
+
+    .icon {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 3% 0;
+        font-size: 4rem;
+    }
+    
+}
+
 /* BEHIND THE LENSE SECTION ------------------------------------- */
 .behindTheLense {
-    margin-top: 175px;
+    margin: 150px 0;
 }
 
 .behindTheLenseImage {
@@ -270,7 +385,7 @@ a.navLinks {
     width: 72%;
     margin-left: 3%;
     padding-top: 2%;
-    height: 450px;
+    padding-bottom: 2%;
 }
 
 .behindTheLenseText h3 {
@@ -278,42 +393,85 @@ a.navLinks {
 }
 
 .behindTheLenseText p {
-    padding: 5% 0 5% 0;
+    margin: 6% 0 6% 0;
 }
 
-/* .behindTheLenseImage img {
+.behindTheLenseImage img {
     width: 100%;
     display: block;
-} */
+}
 
-@media(max-width: 1450px) {
+@media(max-width: 1550px) {
     .behindTheLenseText p {
-        padding: 2% 0 2% 0;
+        margin: 4% 0 3% 0;
+}
+}
+
+@media(max-width: 1345px) {
+    .behindTheLenseText p {
+        margin: 3.5% 0 2.5% 0;
+}
+}
+
+@media(max-width: 1250px) {
+
+    .behindTheLense {
+        margin: 100px 0;
+    }
+    .behindTheLenseImage,
+    .behindTheLenseText {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .behindTheLenseImage {
+        width: 50%;
+    }
+
+    .behindTheLenseText {
+        width: 100%;
+    }
+
+    .behindTheLenseText p {
+        padding: 3% 0;
     }
 }
 
-@media(max-width: 1370px) {
-    .behindTheLenseText p {
-        padding: 2% 0 1% 0;
+@media(max-width: 780px) {
+    .behindTheLense {
+        margin: 20px 0;
     }
+
+    .behindTheLenseText p {
+        padding: 3% 10%;
+    }    
 }
 
-@media(max-width: 1338px) {
+@media(max-width: 633px) {
+    .behindTheLenseImage {
+        width: 100%;
+    } 
     .behindTheLenseText p {
-        padding: 1% 0 1% 0;
-    }
+        padding: 10% 0;
+    } 
 }
 
+@media(max-width: 466px) {
+    .behindTheLenseText h3 {
+        line-height: 4rem;
+    }
 
-
-
+}
 
 /* NATURE-SCENERY / CANDID PHOTOGRAPHY SECTION ------------------- */
 
 .natureGrid,
 .candidGrid {
     background: #f0f5ff;
-    padding: 0;
+
 }
 
 .natureImageBox,
@@ -331,6 +489,7 @@ a.navLinks {
 .natureImageBox img,
 .candidImageBox img {
     display: block;
+    width: 100%;
 }
 
 
@@ -349,12 +508,65 @@ a.navLinks {
     text-align: left;
     width: 50%;
     padding-top: 15%;
+    padding-bottom: 5%;
     margin-left: 15%;
 
 }
 
 .candidContentWrapper p {
     padding-bottom: 2%;
+}
+
+@media(max-width: 1222px) {
+    .candidContentWrapper {
+        padding-top: 10%;
+}
+}
+
+@media(max-width: 1125px) {
+    .candidContentWrapper {
+        padding-top: 8%;
+
+    }
+
+    .natureContentWrapper {
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
+}
+
+@media(max-width: 1090px) {
+    .candidContentWrapper {
+        padding-top: 3%;
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 1014px) {
+    .natureImageBox,
+    .candid,
+    .nature,
+    .candidImageBox {
+        float: none;
+        display: block;
+        width: 100%;
+}
+
+.natureContentWrapper,
+.candidContentWrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15% 10%;
+}
+
+}
+
+@media(max-width: 768px) {
+    .natureImageBox,
+    .candidImageBox {
+        max-height: 40vh;
+    }
 }
 
 
@@ -375,13 +587,13 @@ footer {
 
 .contactBox,
 .footerNavBox {
-    width: 20%;
+    width: 15%;
     float: left;
 }
 
 .enewsBox {
     float: left;
-    width: 60%;
+    width: 70%;
     text-align: center;
 }
 
@@ -402,10 +614,6 @@ footer {
     padding: 5px 0;
 }
 
-
-
-
-
 .footerNavBox nav {
     margin: 0;
 }
@@ -422,9 +630,6 @@ footer {
     text-transform: uppercase;
 }
 
-
-
-
 input[type=email] {
 	width: 50%;
 	height: 40px;
@@ -435,7 +640,7 @@ input[type=email] {
 }
 
 input[type=submit] {
-	width: 20%;
+	width: 35%;
 	height: 40px;
     background:#e7a8e6;
     border: 1px solid #e7a8e6;
@@ -449,7 +654,6 @@ input[type=submit] {
 }
 
 
-
 .copyright {
     background: #000;
     text-align: center;
@@ -459,4 +663,49 @@ input[type=submit] {
 .copyright p {
     margin: 0;
     padding: 10px 0;
+}
+
+@media(max-width: 970px) {
+    
+    .contactBox,
+    .footerNavBox {
+        display: none;
+    }
+
+    .enewsBox {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .contactMobile,
+    .footerMobile {
+        float: left;
+        display: block;
+        padding-top: 8%;
+    }
+    .contactMobile {
+        width: 45%;
+    }
+    .footerMobile {
+        width: 55%;
+    }
+}
+
+@media(max-width: 780px) {
+    .footerNavBox ul {
+        text-align: center;
+        
+    }
+} 
+
+@media(max-width: 466px) {
+    input[type=email] {
+	width: 60%;
+}
+
+input[type=submit] {
+	width: 40%;
+	
+}
 }
